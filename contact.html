@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        .contact-info {
+            margin: 20px 0;
+        }
+        .contact-info p {
+            font-size: 18px;
+            margin: 5px 0;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+        .map {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Контактная информация</h1>
+        <div class="contact-info">
+            <p>📍 Адрес: ул. Примерная, 12, Париж, Франция</p>
+            <p>📞 Телефон: +33 1 23 45 67 89</p>
+            <p>✉️ Email: example@email.com</p>
+        </div>
+        
+        <h2>Свяжитесь с нами</h2>
+        <form>
+            <div class="form-group">
+                <input type="text" placeholder="Ваше имя" required>
+            </div>
+            <div class="form-group">
+                <input type="email" placeholder="Ваш email" required>
+            </div>
+            <div class="form-group">
+                <textarea placeholder="Ваше сообщение" rows="5" required></textarea>
+            </div>
+            <button type="submit">Отправить</button>
+        </form>
+
+        <div class="map">
+            <h3>Мы на карте</h3>
+            <iframe
+                width="100%"
+                height="300"
+                frameborder="0"
+                style="border:0"
+                src="https://www.google.com/maps/embed/v1/place?key=YOUR_API_KEY&q=Paris,France"
+                allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+</body>
+</html>
